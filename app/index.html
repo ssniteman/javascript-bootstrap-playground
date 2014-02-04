@@ -35,7 +35,7 @@
                 </ul>
                 <h3 class="text-muted">javascript playground</h3>
             </div>
-
+        </div>
 
              <form class="form-horizontal" role="form">
                 <div class="form-group">
@@ -51,7 +51,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="inputphonenumber3" class="col-sm-2 control-label">Phone</label>
+                    <label for="inputphonenumber3" class="col-sm-2 control-label">Phone Number</label>
                     <div class="col-sm-3">
                         <input type="phone-number" class="form-control" id="inputphonenumber3" placeholder="Phone Number">
                     </div>
@@ -89,7 +89,7 @@
                 <div class="form-group">
                     <label for="inputmodel3" class="col-sm-2 control-label">Model</label>
                     <div class="col-sm-3">
-                        <input type="year" class="form-control" id="inputmodel3" placeholder="Model">
+                        <input type="model" class="form-control" id="inputmodel3" placeholder="Model">
                     </div>
                 </div>
                 <div class="form-group">
@@ -100,16 +100,50 @@
                 </div>
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
-                        <button type="submit" class="btn btn-default">Sign Up</button>
+                        <button type="submit" class="btn btn-default submit">Submit</button>
                     </div>
                 </div>
             </form>
-
+        <div class="users-container">
+             <div class="each-user"> 
+                <div class="user-info">
+                <img class="car-image" src="http://placehold.it/350x150">
+                    <div class="name">Bob Thorpe</div>
+                    <div class="vehicle">
+                    <div class="year">1954</div>
+                    <div class="make">Ford</div>
+                    <div class="model">Mustang</div>
+                    </div>
+                </div>
+            </div> 
+            <div class="each-user"> 
+                <div class="user-info">
+                <img class="car-image" src="http://placehold.it/350x150">
+                    <div class="name">Robert Wayne</div>
+                    <div class="vehicle">
+                    <div class="year">1946</div>
+                    <div class="make">Chevy</div>
+                    <div class="model">Wang</div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+       
+        <script class= "RegistrantTemplate" type="text/template">
+            <div class="each-user">
+                <img class="car-image"src="<%= data.image %>">
+                <div class="name"><%= data.name %></div>
+                <div class="year"><%= data.year %></div>
+                <div class="make"><%= data.make %></div>
+                <div class="model"><%= data.model %></div>
+            </div>    
+        </script>
         
 
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
+
         <script src="bower_components/jquery/jquery.js"></script>
         <script src="bower_components/underscore/underscore.js"></script>
         <!-- endbower -->

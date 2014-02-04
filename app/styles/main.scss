@@ -51,6 +51,37 @@ form {
     display: none;
 }
 
+.users-container {
+    width: 960px;
+    margin: 40px auto;
+}
+
+// .vehicle {
+//     display: inline-block;
+// }
+
+.year, .make, .model {
+    display: inline-block;
+}
+
+img {
+    box-shadow: 4px 5px 2px black;
+}
+
+.name {
+    margin-top: 10px;
+}   
+
+.each-user {
+    display: inline-block;
+    margin-left: 85px;
+}
+
+
+
+
+
+
 
 
 
